@@ -1,7 +1,7 @@
-using ApplicationCore.Interfaces;
+﻿using Cbci.BillsPayment.ApplicationCore.Interfaces;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Services
+namespace Cbci.BillsPayment.Infrastructure.Services
 {
     // This class is used by the application to send email for account confirmation and password reset.
     // For more details see https://go.microsoft.com/fwlink/?LinkID=532713

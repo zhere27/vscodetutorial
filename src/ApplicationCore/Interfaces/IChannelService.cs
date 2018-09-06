@@ -1,7 +1,8 @@
 using System.Threading.Tasks;
-using ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
 
-namespace ApplicationCore.Interfaces
+namespace Cbci.BillsPayment.ApplicationCore.Interfaces
 {
     public interface IChannelService
     {

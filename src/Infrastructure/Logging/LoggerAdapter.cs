@@ -1,7 +1,7 @@
-using ApplicationCore.Interfaces;
+﻿using Cbci.BillsPayment.ApplicationCore.Interfaces;
 using Microsoft.Extensions.Logging;
 
-namespace Infrastructure.Logging
+namespace Cbci.BillsPayment.Infrastructure.Logging
 {
     public class LoggerAdapter<T> : IAppLogger<T>
     {

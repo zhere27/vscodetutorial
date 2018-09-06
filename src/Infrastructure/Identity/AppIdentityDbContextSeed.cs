@@ -1,7 +1,7 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Identity
+namespace Cbci.BillsPayment.Infrastructure.Identity
 {
     public class AppIdentityDbContextSeed
     {

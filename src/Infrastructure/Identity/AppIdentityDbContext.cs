@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Identity
+
+namespace Cbci.BillsPayment.Infrastructure.Identity
 {
     public class AppIdentityDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -18,4 +19,5 @@ namespace Infrastructure.Identity
             // Add your customizations after calling base.OnModelCreating(builder);
         }
     }
+
 }

@@ -1,12 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace ApplicationCore.Entities
+﻿namespace Cbci.BillsPayment.ApplicationCore.Entities
 {
+    // This can easily be modified to be BaseEntity<T> and public T Id to support different key types.
+    // Using non-generic integer types for simplicity and to ease caching logic
     public class BaseEntity
     {
-        [Key]
-        [Column("Id", TypeName = "bigint", Order = 0)]
-        public long Id { get; set; }
+        public int Id { get; set; }
     }
 }

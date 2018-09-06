@@ -1,10 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Cbci.BillsPayment.ApplicationCore</RootNamespace>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Ardalis.GuardClauses" Version="1.2.3"/>
-    <PackageReference Include="System.Security.Claims" Version="4.3.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.2"/>
+    <PackageReference Include="Ardalis.GuardClauses" Version="1.2.3" />
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
   </ItemGroup>
+
 </Project>

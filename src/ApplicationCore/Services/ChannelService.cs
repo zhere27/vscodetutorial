@@ -1,9 +1,11 @@
 using System.Threading.Tasks;
-using ApplicationCore.Entities;
-using ApplicationCore.Interfaces;
+using Cbci.BillsPayment.ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Interfaces;
 using Ardalis.GuardClauses;
+using Cbci.BillsPayment.ApplicationCore.Entities.Channels;
+using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
 
-namespace ApplicationCore.Services
+namespace Cbci.BillsPayment.ApplicationCore.Services
 {
     public class ChannelService : IChannelService
     {

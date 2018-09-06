@@ -1,7 +1,9 @@
 using System.Threading.Tasks;
-using ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities.Channels;
+using Cbci.BillsPayment.ApplicationCore.Interfaces;
 
-namespace ApplicationCore.Interfaces
+namespace Cbci.BillsPayment.ApplicationCore.Interfaces
 {
     public interface IChannelRepository : IRepository<Channel>, IAsyncRepository<Channel>
     {
