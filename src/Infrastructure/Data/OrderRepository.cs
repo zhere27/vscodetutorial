@@ -3,7 +3,7 @@ using Cbci.BillsPayment.ApplicationCore.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 namespace Cbci.BillsPayment.Infrastructure.Data
 {
     public class OrderRepository : EfRepository<Order>, IOrderRepository

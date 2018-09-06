@@ -1,4 +1,5 @@
-﻿using Cbci.BillsPayment.ApplicationCore.Interfaces;
+﻿using Cbci.BillsPayment.ApplicationCore.Entities.Base;
+using Cbci.BillsPayment.ApplicationCore.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 

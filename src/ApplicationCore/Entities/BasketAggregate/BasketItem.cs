@@ -1,4 +1,6 @@
-﻿namespace Cbci.BillsPayment.ApplicationCore.Entities.BasketAggregate
+﻿using Cbci.BillsPayment.ApplicationCore.Entities.Base;
+
+namespace Cbci.BillsPayment.ApplicationCore.Entities.BasketAggregate
 {
     public class BasketItem : BaseEntity
     {

@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Cbci.BillsPayment.ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 using Cbci.BillsPayment.ApplicationCore.Entities.Channels;
 using Cbci.BillsPayment.ApplicationCore.Interfaces;
 

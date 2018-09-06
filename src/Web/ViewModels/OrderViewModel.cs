@@ -1,6 +1,7 @@
 ﻿using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
 using System;
 using System.Collections.Generic;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.Web.ViewModels
 {

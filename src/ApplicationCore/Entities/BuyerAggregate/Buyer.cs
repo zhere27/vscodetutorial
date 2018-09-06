@@ -2,6 +2,7 @@
 using Ardalis.GuardClauses;
 using Cbci.BillsPayment.ApplicationCore.Entities;
 using System.Collections.Generic;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.ApplicationCore.Entities.BuyerAggregate
 {

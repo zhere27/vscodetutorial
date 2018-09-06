@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using Cbci.BillsPayment.ApplicationCore.Entities;
-using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.ApplicationCore.Interfaces
 {

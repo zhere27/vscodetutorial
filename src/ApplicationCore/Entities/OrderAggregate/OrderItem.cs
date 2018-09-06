@@ -1,4 +1,5 @@
 ﻿using Cbci.BillsPayment.ApplicationCore.Entities;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate
 {

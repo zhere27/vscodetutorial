@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate
+namespace Cbci.BillsPayment.ApplicationCore.Entities.Base
 {
     public class Address // ValueObject
     {

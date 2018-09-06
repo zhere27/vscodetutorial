@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Ardalis.GuardClauses;
 using Cbci.BillsPayment.ApplicationCore.Entities;
 using Cbci.BillsPayment.ApplicationCore.Interfaces;
-using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 using Cbci.BillsPayment.ApplicationCore.Services;
 
 namespace Cbci.BillsPayment.ApplicationCore.Entities.Channels

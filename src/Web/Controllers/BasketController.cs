@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
 using Microsoft.AspNetCore.Authorization;
 using Cbci.BillsPayment.Web.Interfaces;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.Web.Controllers
 {

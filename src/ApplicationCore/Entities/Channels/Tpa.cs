@@ -1,3 +1,5 @@
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
+
 namespace Cbci.BillsPayment.ApplicationCore.Entities.Channels
 {
     public class Tpa : BaseEntity

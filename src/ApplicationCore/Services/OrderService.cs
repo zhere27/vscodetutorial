@@ -1,10 +1,11 @@
 ﻿using Cbci.BillsPayment.ApplicationCore.Interfaces;
-using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 using System.Threading.Tasks;
 using Cbci.BillsPayment.ApplicationCore.Entities;
 using System.Collections.Generic;
 using Ardalis.GuardClauses;
 using Cbci.BillsPayment.ApplicationCore.Entities.BasketAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
 
 namespace Cbci.BillsPayment.ApplicationCore.Services
 {

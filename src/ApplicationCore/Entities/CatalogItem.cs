@@ -1,4 +1,6 @@
-﻿namespace Cbci.BillsPayment.ApplicationCore.Entities
+﻿using Cbci.BillsPayment.ApplicationCore.Entities.Base;
+
+namespace Cbci.BillsPayment.ApplicationCore.Entities
 {
     public class CatalogItem : BaseEntity
     {

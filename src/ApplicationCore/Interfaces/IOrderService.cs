@@ -1,4 +1,4 @@
-﻿using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+﻿using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 using System.Threading.Tasks;
 
 namespace Cbci.BillsPayment.ApplicationCore.Interfaces

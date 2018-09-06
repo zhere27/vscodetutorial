@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Ardalis.GuardClauses;
-using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.Base;
 
 namespace Cbci.BillsPayment.ApplicationCore.Entities.Channels
 {
