@@ -21,9 +21,9 @@ namespace Cbci.BillsPayment.ApplicationCore.Entities.Channels
 
         public Channel(string accountCode, string accountName, string status, Address address)
         {
-            Guard.Against.NullOrEmpty(accountCode,nameof(accountCode));
-            Guard.Against.NullOrEmpty(accountName,nameof(accountCode));
-            Guard.Against.NullOrEmpty(status,nameof(status));
+            Guard.Against.NullOrEmpty(accountCode, nameof(accountCode));
+            Guard.Against.NullOrEmpty(accountName, nameof(accountCode));
+            Guard.Against.NullOrEmpty(status, nameof(status));
             Guard.Against.Null(address, nameof(address));
 
             AccountCode = accountCode;
@@ -40,8 +40,10 @@ namespace Cbci.BillsPayment.ApplicationCore.Entities.Channels
 
         public Address Address { get; private set; }
 
-        public ICollection<Branch> Branch { get; set; }
+        public long BranchId { get; set; }
 
+        public Branch Branch { get; set; }
+        
         public IReadOnlyCollection<Branch> Branches => _items.AsReadOnly();
 
     }

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Cbci.BillsPayment.ApplicationCore.Entities;
 using Cbci.BillsPayment.ApplicationCore.Entities.BasketAggregate;
 using Cbci.BillsPayment.ApplicationCore.Entities.OrderAggregate;
+using Cbci.BillsPayment.ApplicationCore.Entities.Channels;
 
 namespace Cbci.BillsPayment.Infrastructure.Data
 {
@@ -13,6 +14,7 @@ namespace Cbci.BillsPayment.Infrastructure.Data
         {
         }
 
+        public DbSet<Channel> Channel { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<CatalogItem> CatalogItems { get; set; }
         public DbSet<CatalogBrand> CatalogBrands { get; set; }
@@ -22,6 +24,7 @@ namespace Cbci.BillsPayment.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Channel>(ConfigureChannel);
             builder.Entity<Basket>(ConfigureBasket);
             builder.Entity<CatalogBrand>(ConfigureCatalogBrand);
             builder.Entity<CatalogType>(ConfigureCatalogType);
@@ -30,6 +33,30 @@ namespace Cbci.BillsPayment.Infrastructure.Data
             builder.Entity<OrderItem>(ConfigureOrderItem);
         }
 
+        private void ConfigureChannel(EntityTypeBuilder<Channel> builder)
+        {
+            builder.ToTable("Channel");
+
+            builder.Property(ci => ci.Id)
+                .ForSqlServerUseSequenceHiLo("channel_hilo")
+                .IsRequired();
+
+                builder.Property(ci=>ci.AccountCode)
+                .IsRequired()
+                .HasMaxLength(50);
+
+                builder.Property(ci=>ci.AccountName)
+                .IsRequired()
+                .HasMaxLength(250);
+
+                builder.Property(ci=>ci.Status)
+                .HasMaxLength(50);
+
+                builder.HasOne(ci=>ci.Branch)
+                .WithMany()
+                .HasForeignKey(ci=>ci.BranchId);
+        }
+        
         private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
         {
             var navigation = builder.Metadata.FindNavigation(nameof(Basket.Items));
