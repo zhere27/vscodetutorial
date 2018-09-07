@@ -47,7 +47,7 @@ namespace Cbci.BillsPayment.Web.Controllers
         }
 
         [HttpGet("{orderId}")]
-        public async Task<IActionResult> Detail(int orderId)
+        public async Task<IActionResult> Detail(long orderId)
         {
             var customerOrders = await _orderRepository.ListAsync(new CustomerOrdersWithItemsSpecification(User.Identity.Name));
             var order = customerOrders.FirstOrDefault(o => o.Id == orderId);

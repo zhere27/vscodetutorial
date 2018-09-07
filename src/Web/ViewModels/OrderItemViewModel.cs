@@ -6,7 +6,7 @@ namespace Cbci.BillsPayment.Web.ViewModels
 {
     public class OrderItemViewModel
     {
-        public int ProductId { get; set; }
+        public long ProductId { get; set; }
 
         public string ProductName { get; set; }
 

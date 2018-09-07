@@ -6,7 +6,7 @@ namespace Cbci.BillsPayment.Web.ViewModels
 {
     public class BasketViewModel
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public List<BasketItemViewModel> Items { get; set; } = new List<BasketItemViewModel>();
         public string BuyerId { get; set; }
 
